@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Flora</title>
+    <link rel="stylesheet" href="styles/thesmile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section_one">
+        <ul>
+            <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> Chat</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Order by phone</a></li>
+            <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> How to order</a></li>
+            <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Gallery</a></li>
+            <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> The florist</a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Contact us</a></li>
+            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li class="navbar_icon"><a href="#"><img src="images/logo-small.png" alt="Euro Flora"></a></li>
+        </ul>
+    </section>
+
+    <div class="body">
+        <section class="left_body">
+            <img src="images/the smile.jpg" alt="">
+            <h3>Price(delivery included)</h3><br>
+            <hr>
+            <div class="price_tag">
+                <div>
+                    <input type="radio" name="price" id="check_box_one" checked><span> Standard 78.90&#128;</span>
+                </div>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <div class="price_tag">
+                <div>
+                    <input type="radio" name="price" id="check_box_two"><span> Deluxe 98.90&#128;</span>
+                </div>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <div class="price_tag">
+                <div>
+                    <input type="radio" name="price" id="check_box_three"><span> Premium 118.90&#128;</span>
+                </div>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <input type="submit" value="Total: 78.90&#128;(delivery included)">
+            <p>The smile 78.90&#128;</p>
+        </section>
+        <section class="right_body">
+            <h1>The Smile</h1>
+            <p><b>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                for every occasion. Conveys joy.</b><br><br>
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
+                arrangement.
+            </p><br>
+            <hr><br>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Delivery date*</h4>
+                        </td>
+                        <td>
+                            <input type="date" name="date" id="input_date" placeholder="dd/mm/yyyy">
+                            <p class="err" id="input_date_txt"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Delivery time</h4>
+                        </td>
+                        <td>
+                            <input type="radio" name="Delivery_time" id="" checked> Working day-Free(9 a.m.-9p.m.)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="Delivery_time" id=""> Sunday and Public Holidays 4.00</td>
+                        <p id="input_time"></p>
+                    </tr>
+                    <tr>
+                        <td><h4>Quantity*</h4></td>
+                        <td>
+                            <input type="number" name="number" id="input_quantity">
+                            <p class="err" id="input_quantity_txt"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Message</h4>
+                            <p>Out of ideas? Chose a<br>message!</p>
+                        </td>
+                        <td>
+                            <textarea name="message" id="input_message" cols="60" rows="10"></textarea>
+                            <p class="err" id="input_message_txt"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Signature</h4>
+                        </td>
+                        <td>
+                            <input type="text" name="signature" id="input_signature">
+                            <p class="err" id="input_signature_txt"></p>
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+            <button onclick="submit()" id="continue_button"><b>Continue&#12299;</b></button>
+        </section>
+    </div>
+
+    <script src="scripts/thesmile.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/euroflora-logo.png" alt="EuroFlora"></a>
+        </div>
+    </section>
+    <section class="form_section">
+        <form action="">
+            <p>
+                We are Online! Welcome to Instant Answer Messaging. During the opening hours of the shop, your
+                request will be read and managed in real time. If you have already placed an order you can call the
+                phone number dedicated to the customers, you received in the summary email.
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <span><p>Name*</p></span>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="name" id="name_id">
+                        <p id="name_err_txt" class="error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><p>E-Mail</p></span>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="email" id="email_id">
+                        <p id="email_err_txt" class="error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><p>Phone*</p></span>
+                    </td>
+                    <td>
+                        <select name="country_code" id="country_code_id">
+                            <option value="SriLanka">Sri Lanka +94</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="tel" name="telephone" id="telephone_id" placeholder="Mobile number">
+                        <p id="phone_err_txt" class="error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><p>Order code</p></span>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="order_code" id="order_code_id" placeholder="Enter the code received by email if available">
+                        <p id="order_code_err_txt" class="error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><p>Message*</p></span>
+                    </td>
+                    <td colspan="2">
+                        <textarea name="message" id="message_id" cols="30" rows="10" placeholder="Describe your request accurately to receive better info."></textarea>
+                        <p id="message_err_txt" class="error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><p>Attachment</p></span>
+                    </td>
+                    <td colspan="2">
+                        <input type="file" name="input_file" id="input_file_id">
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </form>
+        <div class="submit_button">
+            <button onclick="displayErrors()">Start</button>
+        </div>
+    </section>
+
+    <script src="scripts/contact.js"></script>
+    
+</body>
+</html>
